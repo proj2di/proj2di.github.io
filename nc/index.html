@@ -271,6 +271,171 @@
 	<script src="/assets/js/jquery.mb.YTPlayer.min.js"></script>
 	<script src="/assets/js/common.js"></script>
 
+    <style>
+    .p-header__link a {
+	color: #e3007f;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 900;
+	text-decoration: none;
+}
+
+.p-header__link a.is-current:not(.is-disable)::before {
+	background: transparent url(../img/common/icon-current.png) no-repeat center center/contain;
+	bottom: calc(100% + 3px);
+	content: "";
+	height: 28px;
+	left: 50%;
+	position: absolute;
+	transform: translateX(-50%);
+	transition: 200ms;
+	transition-timing-function: cubic-bezier(0.09, 0.83, 0.54, 1.54);
+	width: 30px;
+}
+
+.p-header__link a.is-current.current-disable:not(.is-disable)::before {
+	opacity: 0;
+	transform: translate(-50%, 20px);
+}
+
+.p-header__link a.current-show:not(.is-disable)::before {
+	background: transparent url(../img/common/icon-current.png) no-repeat center center/contain;
+	bottom: calc(100% + 3px);
+	content: "";
+	height: 28px;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%);
+	transition: 200ms;
+	transition-timing-function: cubic-bezier(0.09, 0.83, 0.54, 1.54);
+	width: 30px;
+}
+
+.p-header__link a.current-show.current-anime:not(.is-disable)::before {
+	opacity: 0;
+	transform: translate(-50%, 20px);
+}
+
+.p-header__link a.is-disable {
+	opacity: 0.2;
+	pointer-events: none;
+}
+
+.p-header__link a[target="_blank"]::after {
+	background: transparent url(../img/common/icon-target.png) no-repeat center center/contain;
+	content: "";
+	height: 10px;
+	left: calc(100% + 5px);
+	position: absolute;
+	top: -5px;
+	width: 10px;
+}
+
+.p-header__link a.is-current:not(.is-disable)::before {
+	background: transparent url(../img/common/icon-current.png) no-repeat center center/contain;
+	bottom: calc(100% + 3px);
+	content: "";
+	height: 28px;
+	left: 50%;
+	position: absolute;
+	transform: translateX(-50%);
+	transition: 200ms;
+	transition-timing-function: cubic-bezier(0.09, 0.83, 0.54, 1.54);
+	width: 30px;
+}
+
+.p-header__link a.is-current.current-disable:not(.is-disable)::before {
+	opacity: 0;
+	transform: translate(-50%, 20px);
+}
+
+.p-header__link a.current-show:not(.is-disable)::before {
+	background: transparent url(../img/common/icon-current.png) no-repeat center center/contain;
+	bottom: calc(100% + 3px);
+	content: "";
+	height: 28px;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%);
+	transition: 200ms;
+	transition-timing-function: cubic-bezier(0.09, 0.83, 0.54, 1.54);
+	width: 30px;
+}
+
+.p-header__link a.current-show.current-anime:not(.is-disable)::before {
+	opacity: 0;
+	transform: translate(-50%, 20px);
+}
+
+.p-header__button {
+	margin-left: auto;
+	width: 63px;
+}
+
+.p-header__current {
+	bottom: calc(100% + 3px);
+	left: 0;
+	position: absolute;
+	transition: left 500ms;
+	transition-timing-function: ease;
+	width: 30px;
+}
+
+.p-header__link:nth-child(1).is-current ~ .p-header__current {
+	left: 12px;
+}
+
+.p-header__link:nth-child(2).is-current ~ .p-header__current {
+	left: 105px;
+}
+
+.p-header__link:nth-child(3).is-current ~ .p-header__current {
+	left: 222px;
+}
+
+.p-header__link:nth-child(4).is-current ~ .p-header__current {
+	left: 370px;
+}
+
+.p-header__link:nth-child(6).is-current ~ .p-header__current {
+	left: 588px;
+}
+
+.p-header__link:nth-child(7).is-current ~ .p-header__current {
+	left: 677px;
+}
+
+.p-header__link:nth-child(1):hover ~ .p-header__current {
+	left: 12px;
+}
+
+.p-header__link:nth-child(2):hover ~ .p-header__current {
+	left: 105px;
+}
+
+.p-header__link:nth-child(3):hover ~ .p-header__current {
+	left: 222px;
+}
+
+.p-header__link:nth-child(4):hover ~ .p-header__current {
+	left: 370px;
+}
+
+.p-header__link:nth-child(5):hover ~ .p-header__current {
+	left: 500px;
+}
+
+.p-header__link:nth-child(6):hover ~ .p-header__current {
+	left: 588px;
+}
+
+.p-header__link:nth-child(7):hover ~ .p-header__current {
+	left: 677px;
+}
+
+.p-header__link:nth-child(8):hover ~ .p-header__current {
+	left: 790px;
+}
+    </style>
 </body>
 
 </html>
