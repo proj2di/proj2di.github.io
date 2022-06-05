@@ -4003,7 +4003,7 @@ select:focus {
 }
 
 .l-post {
-	padding-top: 90px;
+	margin-top: 5rem;
 }
 
 .l-post__head {
@@ -4486,7 +4486,7 @@ select:focus {
 }
 
 .p-entry-single__title {
-	font-size: 16px;
+	font-size: 22px;
 	font-weight: 800;
 	letter-spacing: 0.06em;
 	line-height: 1.5;
@@ -5150,7 +5150,7 @@ select:focus {
 }
 
 .p-news-card__title {
-	font-size: 12px;
+	font-size: 14px;
 	letter-spacing: 0.72px;
 	line-height: 1.6;
 	margin-top: 8px;
@@ -5597,7 +5597,7 @@ select {
 }
 
 .l-post {
-	padding-top: 8.5rem;
+	padding-top: 0rem;
 }
 
 .l-post__head {
@@ -6341,7 +6341,7 @@ select {
 
 .l-page2 {
 	padding-bottom: 0px;
-	padding-top: 136px;
+	padding-top: 40px;
 }
 
 
@@ -6352,7 +6352,7 @@ select {
 }
 
 .l-post {
-	padding-top: 136px;
+	padding-top: 40px;
 }
 
 .l-post__content {
@@ -7068,19 +7068,6 @@ a.underline {
 /* ---------- Common p text ---------- */
 p{
     font-family: 'Zen Kurenaido', sans-serif;
-}
-
-/* ---------- Replace style2.css ---------- */
-body::before {
-	background: #d495f7 url(../img/common/base-bg.png) repeat center center/150px 150px;
-	content: "";
-	display: block;
-	height: 100vh;
-	left: 0;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	z-index: 1;
 }
 
 /* ---------- Trade More ---------- */
