@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/xiaoleng
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://www.xln.moe
+  * I am xiaoleng (https://keybase.io/xiaoleng) on keybase.
+  * I have a public key ASC0eYnS__UQ6grvJjl2kCdX1DLbSJaIFxS_ZqrEx2krrAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01200148ab75a4bba6c3f74d5d1cb8141becb0a625e125388fb2d37589e4ed8998c30a",
+      "host": "keybase.io",
+      "kid": "0120b47989d2fff510ea0aef263976902757d432db4896881714bf66aac4c7692bac0a",
+      "uid": "dfd910b5e036f87155aa1c3047b5c719",
+      "username": "xiaoleng"
+    },
+    "merkle_root": {
+      "ctime": 1641901990,
+      "hash": "5018230aa73c905c77ad5793bebee8fe77d79aad7c0b4015d749bb793773aed075287257674532e283d06700b7d0d0030c8faf9249e270e7c0f2ab4e6104a6f3",
+      "hash_meta": "907b5e25f8cb788a2fc3402390ed97057d3df2f01d95ab59be36062718d4190c",
+      "seqno": 21608987
+    },
+    "service": {
+      "entropy": "mws94L9zzSBcAcGJzNireJOQ",
+      "hostname": "www.xln.moe",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.3.0"
+  },
+  "ctime": 1641901997,
+  "expire_in": 504576000,
+  "prev": "c19f7387bf1273d92a98f3b2cec9648358e9f5c4f31867ce6acb1fb9543ea9eb",
+  "seqno": 51,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgtHmJ0v/1EOoK7yY5dpAnV9Qy20iWiBcUv2aqxMdpK6wKp3BheWxvYWTESpcCM8QgwZ9zh78Sc9kqmPOyzslkg1jp9cTzGGfOassfuVQ+qevEIOSDyZfa296vHI4wAlQRvqmdUIRaZrBTmDhNpQJlrbVYAgHCo3NpZ8RAp26AS/r+Jxigf3Z4gUzvHnDctejnW+kM6Pomw+lYD2UW8tgGjObx1Wevobln8QYyUjO0JHmMrHRH6B0iTCq4BqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIPvmu+8vDaPEx08lzkNRv6rYK833agwQzDNEjNMKukSxo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/xiaoleng
+
+==================================================================
