@@ -52,36 +52,6 @@ img.emoji {
         </div>
         
         <body class="page-template-default page page-id-38">
-            <!-- Messenger Chat Plugin Code -->
-            <div id="fb-root"></div>
-
-            <!-- Your Chat Plugin code -->
-            <div id="fb-customer-chat" class="fb-customerchat">
-            </div>
-
-            <script>
-              var chatbox = document.getElementById('fb-customer-chat');
-              chatbox.setAttribute("page_id", "103043264609552");
-              chatbox.setAttribute("attribution", "biz_inbox");
-            </script>
-
-            <!-- Your SDK code -->
-            <script>
-              window.fbAsyncInit = function() {
-                FB.init({
-                  xfbml            : true,
-                  version          : 'v14.0'
-                });
-              };
-
-              (function(d, s, id) {
-                var js, fjs = d.getElementsByTagName(s)[0];
-                if (d.getElementById(id)) return;
-                js = d.createElement(s); js.id = id;
-                js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-                fjs.parentNode.insertBefore(js, fjs);
-              }(document, 'script', 'facebook-jssdk'));
-            </script>
             <div class="l-wrap">
                 <div class="p-header">
                     <div class="l-inner--full p-header__inner">
@@ -103,7 +73,7 @@ img.emoji {
                             <div class="p-header__link">
                                 <a class=" " href="https://xln.moe/about_me">About me</a>
                             </div>
-                            <div class="p-header__link"><a class=" " href="https://xln.moe/fw/shop" target="_blank">Shop</a>
+                            <div class="p-header__link"><a class=" " href="https://facebook.com/xlnww/shop" target="_blank">Shop</a>
                             </div>
                             <!-- <div class="p-header__link">
                             <a class=" is-disable" href="https://xln.moe/livecast">Live Cast</a>
@@ -142,7 +112,7 @@ img.emoji {
                             <a href="https://xln.moe/about_me">About me</a>
                         </div>
                         <div class="p-drawer-content__item">
-                            <a class=" " href="https://xln.moe/fw/shop" target="_blank">Shop</a>
+                            <a class=" " href="https://facebook.com/xlnww/shop" target="_blank">Shop</a>
                         </div>
                         <!-- <div class="p-drawer-content__item">
                             <a href="/livecast" class="is-disable">Live Cast</a>
@@ -185,130 +155,24 @@ img.emoji {
 	<div class="l-post__content p-entry-single l-frame-single">
 								<div class="l-frame-single__content">
 			
-                                    
-              
-          <p style="text-align: center; margin: 0px 0px 30px">
-			xln.moe provides support in English and Chinese.
+                     <div style="display: flex;">                            
+          <p style="font-family: 'Noto Sans SC', sans-serif; letter-spacing: 0.06em; margin: 0px 0px 30px"; letter-spacing: 0.06em; class="c-form__title">
+              xln.moe以中文和英文提供客户支持<br>
+			  xln.moe provides support in Chinese and English.<br><br>
+              若你意外关闭了对话窗口，刷新页面以继续<br>
+              If you closed the conversation window by accident, refresh this page to continue.
 		</p>
-		<form action="https://docs.google.com/forms/d/e/1FAIpQLSc7Ih2eXCba4F6D7XzKSaUOZZq1AxcdjV4Ro_5_lh9pEfOMzQ/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;" class="c-form">
-			<div class="c-form__item">
-				<label class="c-form__label" for="field-mail">Email<!--<span class="c-form__required">Required</span>--></label>
-				<input name="entry.1388518108" class="c-form__input" id="field-name" placeholder="Enter your email address" type="email" required="required">
-			</div>
-			<div class="c-form__item">
-				<label class="c-form__label" for="field-name">Subject<!--<span class="c-form__required">Required</span>--></label>
-				<input name="entry.550336492" class="c-form__input" id="field-mail" placeholder="Enter the subject" type="text" required="required">
-			</div>
-			<div class="c-form__item">
-				<label class="c-form__label" for="field-message">Details</label>
-				<textarea name="entry.405673925" class="c-form__input" id="field-message" placeholder="Enter the details" required="required"></textarea>
-			</div>
-            <div class="c-form__item">
-				<label class="c-form__label" for="field-message">Type</label>
-                <div class= "custom-select">
-				<select name="entry.505433939" required="required">
-            <option value="">...</option>
-			<option value="Verifying Ticket">Verifying Ticket</option>
-			<option value="Modifying User Info">Modifying User Info</option>
-			<option value="Media">Media</option>
-            <option value="Stage">Stage</option>
-			<option value="Requesting Profile">Requesting Profile</option>
-			<option value="Replying Message">Replying Message</option>
-            <option value="Other">Other</option>
-		</select>
-                </div>
-                
-                <script>
-var x, i, j, l, ll, selElmnt, a, b, c;
-/*look for any elements with the class "custom-select":*/
-x = document.getElementsByClassName("custom-select");
-l = x.length;
-for (i = 0; i < l; i++) {
-  selElmnt = x[i].getElementsByTagName("select")[0];
-  ll = selElmnt.length;
-  /*for each element, create a new DIV that will act as the selected item:*/
-  a = document.createElement("DIV");
-  a.setAttribute("class", "select-selected");
-  a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
-  x[i].appendChild(a);
-  /*for each element, create a new DIV that will contain the option list:*/
-  b = document.createElement("DIV");
-  b.setAttribute("class", "select-items select-hide");
-  for (j = 1; j < ll; j++) {
-    /*for each option in the original select element,
-    create a new DIV that will act as an option item:*/
-    c = document.createElement("DIV");
-    c.innerHTML = selElmnt.options[j].innerHTML;
-    c.addEventListener("click", function(e) {
-        /*when an item is clicked, update the original select box,
-        and the selected item:*/
-        var y, i, k, s, h, sl, yl;
-        s = this.parentNode.parentNode.getElementsByTagName("select")[0];
-        sl = s.length;
-        h = this.parentNode.previousSibling;
-        for (i = 0; i < sl; i++) {
-          if (s.options[i].innerHTML == this.innerHTML) {
-            s.selectedIndex = i;
-            h.innerHTML = this.innerHTML;
-            y = this.parentNode.getElementsByClassName("same-as-selected");
-            yl = y.length;
-            for (k = 0; k < yl; k++) {
-              y[k].removeAttribute("class");
-            }
-            this.setAttribute("class", "same-as-selected");
-            break;
-          }
-        }
-        h.click();
-    });
-    b.appendChild(c);
-  }
-  x[i].appendChild(b);
-  a.addEventListener("click", function(e) {
-      /*when the select box is clicked, close any other select boxes,
-      and open/close the current select box:*/
-      e.stopPropagation();
-      closeAllSelect(this);
-      this.nextSibling.classList.toggle("select-hide");
-      this.classList.toggle("select-arrow-active");
-    });
-}
-function closeAllSelect(elmnt) {
-  /*a function that will close all select boxes in the document,
-  except the current select box:*/
-  var x, y, i, xl, yl, arrNo = [];
-  x = document.getElementsByClassName("select-items");
-  y = document.getElementsByClassName("select-selected");
-  xl = x.length;
-  yl = y.length;
-  for (i = 0; i < yl; i++) {
-    if (elmnt == y[i]) {
-      arrNo.push(i)
-    } else {
-      y[i].classList.remove("select-arrow-active");
-    }
-  }
-  for (i = 0; i < xl; i++) {
-    if (arrNo.indexOf(i)) {
-      x[i].classList.add("select-hide");
-    }
-  }
-}
-/*if the user clicks anywhere outside the select box,
-then close all select boxes:*/
-document.addEventListener("click", closeAllSelect);
-</script>
-
-                
-			</div>
-			<div class="c-form__submit">
-				<button type="submit">Submit</button>
-			</div>
-		</form>
-		<script type="text/javascript">
-			let submitted = false;
-		</script>
-		<iframe name="hidden_iframe" id="hidden_iframe" style="display: none" onload="if(submitted){window.location='https://xln.moe/support/submission-success';}"></iframe>                          
+                                    </div>
+                     <div style="display: flex; justify-content: center;">               
+                     <iframe name="f3dbf3dd615fac8" width="1000px" height="1000px" data-testid="dialog_iframe" title="" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="https://www.facebook.com/v14.0/plugins/customerchat.php?app_id=&amp;attribution=biz_inbox&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df32a54934d27cb4%26domain%3Dwww.xln.moe%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fwww.xln.moe%252Ff18cad05a3079d4%26relation%3Dparent.parent&amp;current_url=https%3A%2F%2Fwww.xln.moe%2Fcontact&amp;is_loaded_by_facade=true&amp;local_state=%7B%22v%22%3A1%2C%22path%22%3A2%2C%22chatState%22%3A1%2C%22visibility%22%3A%22not-hidden%22%2C%22showUpgradePrompt%22%3A%22not_shown%22%2C%22greetingVisibility%22%3A%22hidden%22%2C%22shouldShowLoginPage%22%3Afalse%7D&amp;locale=en_US&amp;log_id=4b15c932-792b-4e71-9d84-6eca2329f903&amp;page_id=103043264609552&amp;request_time=1656442900745&amp;sdk=joey" style="z-index: 2147483646; box-shadow: none; border-radius: 0px; top: 0px; right: 0px; width: 406px; height: 550px; max-height: 100%; visibility: visible; background: rgba(212, 149, 247, 0.9); border-radius: 8px" class=""></iframe>
+                                    </div>
+                                    <br>
+                    <div style="display: flex;">                            
+          <p style="font-family: 'Noto Sans SC', sans-serif; letter-spacing: 0.06em; margin: 0px 0px 30px"; letter-spacing: 0.06em; class="c-form__title">
+              访问Meta Messanger时出现问题？可<a style="color: #9306e0; text-decoration: none;"href="https://xln.moe/fw/contactform" target="_blank">在此</a>提交联络表单<br>
+Trouble accessing Meta Messenger? You may submit a contact form <a style="color: #9306e0; text-decoration: none;"href="https://xln.moe/fw/contactform" target="_blank">here</a><br>
+		</p>
+                                    </div>
                                     
                                     
 		</div><!-- /l-frame-single__content -->

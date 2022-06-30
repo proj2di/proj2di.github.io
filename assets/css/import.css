@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* ---------- Zen Kurennaido fonts ---------- */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@100&family=Noto+Sans+SC:wght@100&family=Zen+Kaku+Gothic+New:wght@500&family=Zen+Kurenaido&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@300&family=Noto+Sans+SC:wght@300&family=Zen+Kaku+Gothic+New:wght@500&family=Zen+Kurenaido&display=swap');
 /* ---------- number ---------- */
 /* ---------- color ---------- */
 /* ---------- breakPoint ---------- */
@@ -4031,6 +4031,12 @@ select:focus {
 	text-align: center;
 }
 
+.l-post__middle {
+	padding-bottom: 25px;
+	padding-top: 25px;
+	text-align: center;
+}
+
 .l-section-back {
 	padding-bottom: 60px;
 	padding-top: 60px;
@@ -4205,6 +4211,11 @@ select:focus {
 }
 
 .p-biography-info-card__body {
+	font-weight: 800;
+	margin-top: 30px;
+}
+
+.p-biography-info-card__body2 {
 	font-weight: 800;
 	margin-top: 30px;
 }
@@ -4453,7 +4464,7 @@ select:focus {
 
 .p-entry-content p {
 	margin-top: 2em;
-    font-family: 'Zen Kurenaido', sans-serif;
+    font-family: 'Noto Sans SC', sans-serif;
 }
 
 .p-entry-page {
@@ -4606,6 +4617,46 @@ select:focus {
 	vertical-align: middle;
 }
 
+.p-middle__sns {
+	align-items: center;
+	display: flex;
+}
+
+.p-middle__sns a {
+	text-align: center;
+	text-decoration: none;
+}
+
+.p-middle__sns a:nth-child(n + 2) {
+	margin-left: 46px;
+}
+
+.p-middle__sns a img.is-twitter {
+	width: 27px;
+}
+
+.p-middle__sns a img.is-instagram {
+	width: 27px;
+}
+
+.p-middle__sns a img.is-line {
+	width: 30px;
+}
+
+.p-middle__sns a:hover img {
+	-webkit-animation-name: pop;
+	-webkit-animation-duration: 0.3s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: 1;
+	animation-duration: 0.3s;
+	animation-iteration-count: 1;
+	animation-name: pop;
+	animation-timing-function: linear;
+}
+
+.p-middle__sns img {
+	vertical-align: middle;
+}
 .p-footer__nav {
 	font-size: 18px;
 }
@@ -5177,20 +5228,20 @@ select:focus {
 	text-align: center;
 }
 
-.p-news-card__label.is-media {
-	background: #83ca60;
+.p-news-card__label.is-event {
+	background: #e497de;
 }
 
-.p-news-card__label.is-info {
-	background: #fac025;
-}
-
-.p-news-card__label.is-products {
+.p-news-card__label.is-article {
 	background: #70b6de;
 }
 
-.p-news-card__label.is-live {
-	background: #e497de;
+.p-news-card__label.is-announcement {
+	background: #83ca60;
+}
+
+.p-news-card__label.is-support {
+	background: #fac025;
 }
 
 .p-news-card__title {
@@ -5666,6 +5717,12 @@ select {
 	padding-top: 3.75rem;
 }
 
+.l-post__middle {
+	padding-bottom: 2rem;
+	padding-top: 2rem;
+    padding-right: 1920px;
+}
+    
 .l-section-back {
 	padding-bottom: 7.5rem;
 	padding-top: 7.5rem;
@@ -5857,6 +5914,21 @@ select {
 	width: 1.875rem;
 }
 
+.p-middle__sns a:nth-child(n + 2) {
+	margin-left: 1.875rem;
+}
+
+.p-middle__sns a img.is-twitter {
+	width: 1.6875rem;
+}
+
+.p-middle__sns a img.is-instagram {
+	width: 1.6875rem;
+}
+
+.p-middle__sns a img.is-line {
+	width: 1.875rem;
+}
 .p-footer__nav {
 	align-items: center;
 	display: flex;
@@ -6228,6 +6300,12 @@ select {
 	margin-top: 0;
 	width: 47.81145%;
 }
+    
+.p-biography-info-card__body2 {
+	margin-right: auto;
+	margin-top: 0;
+	width: 47.81145%;
+}
 
 .p-biography-info-card__lead {
 	line-height: 1.4;
@@ -6252,7 +6330,7 @@ select {
 }
 
 .p-poster-info-card__text {
-	letter-spacing: 0.1em;
+	
 }
 
 .p-drawer-button {
@@ -6433,6 +6511,12 @@ select {
 	padding-top: 60px;
 }
 
+.l-post__middle {
+	padding-bottom: 50px;
+	padding-top: 50px;
+    padding-right: 10000px;
+}  
+    
 .l-section-back {
 	padding-bottom: 120px;
 	padding-top: 120px;
@@ -6573,6 +6657,10 @@ select {
 	margin-left: 30px;
 }
 
+.p-middle__sns a:nth-child(n + 2) {
+	margin-left: 30px;
+}
+    
 .p-footer__nav {
 	align-items: center;
 	display: flex;
@@ -7293,6 +7381,7 @@ p{
   right: 0;
   z-index: 99;
     border-radius: 4px;
+    font-family: 'Noto Sans SC', sans-serif;
 }
 
 /* Hide the items when the select box is closed: */
@@ -7316,6 +7405,11 @@ p{
 	justify-content: space-evenly;
 	margin-bottom: 20px;
 }
+
+.c-form__title {
+    
+	}
+
 .c-form__label,
 .c-form__input {
 	padding: 10px;
@@ -7363,6 +7457,9 @@ textarea.c-form__input {
 }
 
 @media (min-width: 640px) {
+    .c-form__title {
+		
+	}
 	.c-form__item {
 		flex-wrap: nowrap;
 	}
@@ -7427,10 +7524,18 @@ textarea.c-form__input {
     display: flex;
     align-items: center;
     padding-left: 0.6153846154rem;
-    
+}
+
 ._3y_2ESY4 ._2a0_SgUF {
     font-size: var(--px18);
     color: var(--grey20);
     margin-left: var(--px8);
     margin-right: var(--px12);
     vertical-align: middle;
+}
+    
+/* ---------- BitMEX Academy footer ---------- */
+#__next{
+    font-size:100%;
+    background: #d495f7;
+}

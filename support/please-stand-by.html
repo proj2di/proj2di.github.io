@@ -51,7 +51,37 @@ img.emoji {
             </div>
         </div>
         
-        <body class="page-template-default page page-id-38">    
+        <body class="page-template-default page page-id-38">
+            <!-- Messenger Chat Plugin Code -->
+            <div id="fb-root"></div>
+
+            <!-- Your Chat Plugin code -->
+            <div id="fb-customer-chat" class="fb-customerchat">
+            </div>
+
+            <script>
+              var chatbox = document.getElementById('fb-customer-chat');
+              chatbox.setAttribute("page_id", "103043264609552");
+              chatbox.setAttribute("attribution", "biz_inbox");
+            </script>
+
+            <!-- Your SDK code -->
+            <script>
+              window.fbAsyncInit = function() {
+                FB.init({
+                  xfbml            : true,
+                  version          : 'v14.0'
+                });
+              };
+
+              (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+                fjs.parentNode.insertBefore(js, fjs);
+              }(document, 'script', 'facebook-jssdk'));
+            </script>    
             <div class="l-wrap">
                 <div class="p-header">
                     <div class="l-inner--full p-header__inner">
@@ -62,7 +92,7 @@ img.emoji {
                         </div><!-- /p-header__logo -->
 				        <nav class="p-header__nav">
                             <div class="p-header__link">
-                                <a class="is-current " href="https://xln.moe">Home</a>
+                                <a class=" " href="https://xln.moe">Home</a>
                             </div>
                             <div class="p-header__link">
                                 <a class=" " href="https://xln.moe/next_event">Next event</a>
@@ -73,7 +103,7 @@ img.emoji {
                             <div class="p-header__link">
                                 <a class=" " href="https://xln.moe/about_me">About me</a>
                             </div>
-                            <div class="p-header__link"><a class=" " href="https://facebook.com/xlnww/shop" target="_blank">Shop</a>
+                            <div class="p-header__link"><a class=" " href="https://xln.moe/fw/shop" target="_blank">Shop</a>
                             </div>
                             <!-- <div class="p-header__link">
                             <a class=" is-disable" href="https://xln.moe/livecast">Live Cast</a>
@@ -112,7 +142,7 @@ img.emoji {
                             <a href="https://xln.moe/about_me">About me</a>
                         </div>
                         <div class="p-drawer-content__item">
-                            <a class=" " href="https://facebook.com/xlnww/shop" target="_blank">Shop</a>
+                            <a class=" " href="https://xln.moe/fw/shop" target="_blank">Shop</a>
                         </div>
                         <!-- <div class="p-drawer-content__item">
                             <a href="/livecast" class="is-disable">Live Cast</a>
@@ -145,46 +175,26 @@ img.emoji {
                         </div><!-- /p-drawer-content__sns-items -->
                     </div><!-- /p-drawer-content__sns -->
                 </div><!-- p-sdrawer-content -->
-
-<div class="l-page2">
-	<div class="l-page__head c-section-heading is-animation">
-		<div class="c-section-heading__text">
-			<span class="c-section-heading__text-main">Blog</span>
-			
-		</div><!-- /c-section-heading__text -->
-	</div><!-- /l-page__head -->
-	<div class="l-page__content l-page-news l-frame-front">
-		<div class="l-page__inner l-inner">
-			<div class="p-news-labels l-page-news__labels">
-			<div class="p-news-labels__item"><a href="https://www.xln.moe/blog">All</a></div>
-            <div class="p-news-labels__item"><a href="https://www.xln.moe/blog/category/event-info">Event Info</a></div>
-			<div class="p-news-labels__item"><a href="https://www.xln.moe/blog/category/announcement">Announcement</a></div>
-			<div class="p-news-labels__item"><a href="https://www.xln.moe/blog/category/article">Article</a></div>
-			<div class="p-news-labels__item"><a class="is-current" href="https://www.xln.moe/blog/category/post">Post</a>
-          
-            </div>
-		</div><!-- /p-news-labels -->
-
-			<div class="p-news-items l-page-news__cards">
-													
-									</div><!-- /p-news__items -->
-
-						<div class="p-pagination l-page-news__pagination">
-												<span class="page-numbers current">1</span>
-<!--<a class="page-numbers" href="https://www.xln.moe/blog/page/2">2</a>
-<span class="page-numbers dots">&hellip;</span>
-<a class="page-numbers" href="https://www.xln.moe/blog/page/5">5</a>
-<a class="next page-numbers" href="https://www.xln.moe/blog/page/2"></a>								<a class="p-pagination__next-last" href="https://www.xln.moe/blog/page/5"></a> -->
-							</div><!-- /p-news-pagination -->
-			
-		</div><!-- /l-page__inner -->
-	</div><!-- /l-page__content -->
-</div><!-- /l-page -->
-
-
-
-                   
-        
+                
+                <div class="l-page2">
+                    <div class="l-page__head c-section-heading is-animation">
+                        <div class="c-section-heading__text">
+                            <span class="c-section-heading__text-main">Support</span>
+                        </div><!-- /c-section-heading__text -->
+                    </div><!-- /l-page__head -->
+                    <div class="l-page__content l-page-biography l-frame-front">
+                        <div class="l-page__inner l-inner l-frame-front__content">
+                            <div class="l-page-biography__info p-biography-info-card">
+                                <div class="p-biography-info-card__text">
+                                    <p style="font-family: 'Noto Sans SC', sans-serif;">请等待你被重定向之页面完成建设或维护，或联系客户支持以继续操作<br></p>
+                                    <p style="font-family: 'Zen Kurenaido', sans-serif;">Please stand by until the page you've been redirected completes or done maintaince; you may also contact our customer support to continue<br><br><br></p>
+                                </div><!-- /p-biography-info-card__text -->
+                            </div><!-- /p-biography-info-card__body -->
+                        
+                        </div><!-- /l-page__inner -->
+                    </div><!-- /l-page__content -->
+                </div><!-- /l-page -->
+                
                 <footer class="p-footer">
                     <div class="l-inner--full p-footer__inner">
                         <div class="p-footer__left">
