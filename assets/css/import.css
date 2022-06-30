@@ -7538,4 +7538,5 @@ textarea.c-form__input {
 #__next{
     font-size:100%;
     background: #d495f7;
+    letter-spacing: normal;
 }
