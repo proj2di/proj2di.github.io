@@ -4124,6 +4124,16 @@ select:focus {
 	width: 9px;
 }
 
+.c-button2[target="_blank"]::after {
+	background: transparent url(../img/common/icon-target-white.png) no-repeat center center/contain;
+	content: "";
+	height: 10px;
+	position: absolute;
+    padding-left: 25px;
+	width: 10px;
+}
+
+
 .c-section-heading {
 	text-align: center;
 }
