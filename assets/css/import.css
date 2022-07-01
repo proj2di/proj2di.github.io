@@ -4124,15 +4124,6 @@ select:focus {
 	width: 9px;
 }
 
-.c-button2[target="_blank"]::after {
-	background: transparent url(../img/common/icon-target-white.png) no-repeat center center/contain;
-	content: "";
-	height: 10px;
-	position: absolute;
-    padding-left: 25px;
-	width: 10px;
-}
-
 .c-section-heading {
 	text-align: center;
 }
@@ -4220,11 +4211,6 @@ select:focus {
 }
 
 .p-biography-info-card__body {
-	font-weight: 800;
-	margin-top: 30px;
-}
-
-.p-biography-info-card__body2 {
 	font-weight: 800;
 	margin-top: 30px;
 }
@@ -6309,12 +6295,6 @@ select {
 	margin-top: 0;
 	width: 47.81145%;
 }
-    
-.p-biography-info-card__body2 {
-	margin-right: auto;
-	margin-top: 0;
-	width: 47.81145%;
-}
 
 .p-biography-info-card__lead {
 	line-height: 1.4;
@@ -7533,25 +7513,10 @@ textarea.c-form__input {
     display: flex;
     align-items: center;
     padding-left: 0.6153846154rem;
-}
-
+    
 ._3y_2ESY4 ._2a0_SgUF {
     font-size: var(--px18);
     color: var(--grey20);
     margin-left: var(--px8);
     margin-right: var(--px12);
     vertical-align: middle;
-}
-    
-/* ---------- BitMEX Academy footer ---------- */
-#__next{
-    font-size:100%;
-    background: #d495f7;
-    letter-spacing: normal;
-}
-
-/* ---------- BitMEX Import Temp 5812 ---------- */
-
-
-/* ---------- BitMEX Import Tempn 866f ---------- */
-
