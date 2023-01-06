@@ -9,7 +9,7 @@ $(function () {
     })
 
     .promise().done(function () {
-        // アニメーション完了後に実行される
+        // run after animation
         // bounce in menu
         if ($(".gnav").hasClass("bounceInRight")){
             hamburger.classList.toggle("active");
@@ -22,16 +22,16 @@ $(function () {
 });
 
 function init() {
-    // スクロールして何ピクセルでアニメーションさせるか
+    // how many pixels are animated upon scroll
     var px_change   = 10;
 
-    // スクロールのイベントハンドラを登録
+    // register scroll event handle
     window.addEventListener('scroll', function(e){
-        // 変化するポイントまでスクロールしたらクラスを追加
+        // add class upon scroll reached changepoint
         if ( $(window).scrollTop() > px_change ) {
             $(".scroll_down_pointer").addClass("scroll_up_pointer");
 
-        // 変化するポイント以前であればクラスを削除
+        // minor (delete) class upon scroll reached changepoint
     } else if ( $(".scroll_down_pointer").hasClass("scroll_up_pointer") ) {
             $(".scroll_down_pointer").removeClass("scroll_up_pointer");
         }

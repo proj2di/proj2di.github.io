@@ -1,17 +1,14 @@
 /* ---------- Change bg to purple ---------- */
-body::before {
-	background: rgba(212, 149, 247, 0.9) url(../img/common/base-bg.png) repeat center center/150px 150px;
-	content: "";
-	display: block;
-	height: 100vh;
-	left: 0;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	z-index: 1;
+body {
+	background: rgba(170, 126, 255, 0.9);
 }
 
 /* ---------- Fix page2 double purple footer bug ---------- */
 .p-footer {
-    background: none;
+    background: inherit;
+}
+
+/* ---------- Fix page2 BitMEX Academy footer double purple footer bug ---------- */
+#__next {
+    background: inherit;
 }

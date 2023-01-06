@@ -17,7 +17,7 @@ $(window).load(function() {
 
     $(".bio-item").slick({
       autoplay: true,
-      autoplaySpeed: 7000, // 最初のスライドの秒数
+      autoplaySpeed: 7000, // seconds for first slide
       infinite: true,
       slidesToShow: 1,
       slidesToScroll: 1,
@@ -29,11 +29,11 @@ $(window).load(function() {
     .on("afterChange", function(event, slick, currentSlide, nextSlide) {
       switch (currentSlide){
         case 0:
-          // 1枚目のスライド
+          // first slide
           $(this).slick("slickSetOption", "autoplaySpeed", 10000);
           break;
         default:
-          // その他のスライド
+          // other slides
           $(this).slick("slickSetOption", "autoplaySpeed", 7000);
           break;
       }
