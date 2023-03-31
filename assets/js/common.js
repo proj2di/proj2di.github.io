@@ -1,10 +1,10 @@
-// loading processing
+// ローディング処理
 $(window).on('load', function () {
 	$("#loading").removeClass("is-active");
 	$(".p-main-visual-image").addClass("is-animation");
 })
 
-// humburger
+// ハンバーガメニュー
 $(".p-header__button,.p-drawer-content__button").on('click', function () {
 	if ($(".p-drawer-content").hasClass("is-active")) {
 		$(".p-drawer-content").removeClass("is-active");
@@ -13,7 +13,7 @@ $(".p-header__button,.p-drawer-content__button").on('click', function () {
 	}
 })
 
-// model
+// モーダル
 $(".js-movie-open").on("click", function () {
 	$(".p-movie-pop").addClass("is-active");
 });
@@ -21,12 +21,12 @@ $(".js-movie-close").on("click", function () {
 	$(".p-movie-pop").removeClass("is-active");
 });
 
-// background processing
+// 背景処理
 var rellax = new Rellax(".rellax", {
 	breakpoints: [576, 768, 1201]
 });
 
-// scrolling
+// スクロールイン
 $(window).scroll(function () {
 	$(".c-section-heading").each(function () {
 		var imgPos = $(this).offset().top;
@@ -53,7 +53,7 @@ jQuery(function () {
 	}
 });
 
-// hover processing
+// ホバー処理
 $('.p-header__link a').on({
 	'mouseenter': function () {
 		if (!$(this).hasClass("is-current")) {
