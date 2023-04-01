@@ -1,0 +1,14 @@
+User-agent: *
+Disallow: /.well-known/
+Disallow: /checkout/
+Disallow: /fw/
+Disallow: /llss
+Disallow: /profile/index
+Disallow: /shop/product/
+Disallow: /support/fw/
+Disallow: /support/load/
+Disallow: /support/contact
+Disallow: /_config
+Disallow: /404
+Disallow: /about_me
+Disallow: /next_event
