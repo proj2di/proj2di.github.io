@@ -5056,7 +5056,7 @@ select:focus {
 }
 
 .p-main-visual {
-	padding: 800px 0 62px;
+	padding: 100vh 0 62px;
 }
 
 .p-main-visual-common {
@@ -6128,7 +6128,7 @@ select {
 
 .p-main-visual {
 	padding-bottom: 7.5rem;
-	padding-top: 75.5rem;
+	padding-top: 100vh;
 }
     
 .p-main-visual-common {
@@ -6749,7 +6749,7 @@ select {
 
 .p-main-visual {
 	padding-bottom: 120px;
-	padding-top: 1436px;
+	padding-top: 100vh;
 }
 
 .p-movie__iframe {
