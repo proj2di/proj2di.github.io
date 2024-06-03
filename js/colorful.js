@@ -15,7 +15,7 @@ var config = {
             tail: {
                 name: '右美沙芬',
                 type: '123',
-                value: 'Introduction',
+                value: './qwq/212.html',
                 style: ['large']
             },
             magika: {
@@ -73,8 +73,8 @@ var config = {
             },
         internet9: {
                 name: 'PGP Public Key Block',
-                type: 'md',
-                value: 'internet8',
+                type: 'md2',
+                value: './qwq/212.html',
                 style: ['large']
             }
         },
@@ -88,13 +88,13 @@ var config = {
         value: {
             internet8: {
                 name: '条款和隐私声明 Terms &amp; Privacy Notice',
-                type: 'md',
+                type: 'md2',
                 value: 'internet8',
                 style: ['large']
             },
             internet9: {
                 name: '数据处理要求 Data Handling Requirement',
-                type: 'md',
+                type: 'md2',
                 value: 'internet8',
                 style: ['large']
             }
@@ -1068,9 +1068,11 @@ function execute(key, action) {
             createWindow(name, template.content, config);
         },
         123: async () => {
-            const response = htmlConfig[action.value];
+            console.log(111111);
+            const response = await fetch(`${action.value}`);
+            console.log(response, 'jhgf');
             const template = document.createElement('template');
-            template.innerHTML = response;
+            template.innerHTML = await response.text();
             createWindow(name, template.content, config);
         },
         game: async () => {
@@ -1101,6 +1103,14 @@ function execute(key, action) {
             const response = htmlConfig[action.value];
             const template = document.createElement('template');
             template.innerHTML = response;
+            createWindow(name, template.content, config);
+        },
+        md2: async () => {
+            console.log(111111);
+            const response = await fetch(`${action.value}`);
+            console.log(response, 'jhgf');
+            const template = document.createElement('template');
+            template.innerHTML = await response.text();
             createWindow(name, template.content, config);
         },
         folder: () => {
