@@ -105,7 +105,7 @@ var config = {
     },
     Twitter: {
         type: 'twitter',
-        value: './qwq/211.html',
+        value: 'twitter.js',
         style: ['large'],
         link: ['icon']
     },
@@ -1100,12 +1100,11 @@ function execute(key, action) {
             createWindow(name, template.content, config);
         },
         twitter: async () => {
-            console.log(111111);
-            const response = await fetch(`${action.value}`);
-            console.log(response, 'jhgf');
-            const template = document.createElement('template');
-            template.innerHTML = await response.text();
-            createWindow(name, template.content, config);
+            const script = document.createElement('script');
+            script.setAttribute('src', `../js/${action.value}`);
+            const newWindow = createWindow(name, null, config);
+            window.root = newWindow.children[1];
+            newWindow.appendChild(script);
         },
         facebook: async () => {
             console.log(111111);
