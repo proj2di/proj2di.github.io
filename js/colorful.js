@@ -62,11 +62,17 @@ var config = {
         link: ['entry']
     },
     mis7: {
-        name: '照片',
+        name: '支持 Support',
         type: 'folder',
         value: {
             internet8: {
                 name: '关于魔法少女',
+                type: 'url',
+                value: './contact.html',
+                style: ['large']
+            },
+        internet9: {
+                name: '关于魔法少女2',
                 type: 'md',
                 value: 'internet8',
                 style: ['large']
@@ -77,11 +83,17 @@ var config = {
         link: ['entry', 'icon']
     },
     mi7: {
-        name: '色',
+        name: '法律 Legal',
         type: 'folder',
         value: {
             internet8: {
                 name: '关于魔法少女',
+                type: 'md',
+                value: 'internet8',
+                style: ['large']
+            },
+            internet9: {
+                name: '关于魔法少女2',
                 type: 'md',
                 value: 'internet8',
                 style: ['large']
