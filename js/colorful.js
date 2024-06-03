@@ -111,36 +111,34 @@ var config = {
     },
     Facebook: {
         type: 'facebook',
-        value: './qwq/212.html',
+        value: 'facebook.js',
         style: ['large'],
         link: ['icon']
     },
     Instagram: {
         type: 'instagram',
-        value: './qwq/214.html',
+        value: 'instagram.js',
         style: ['large'],
         link: ['icon']
     },
     Telegram: {
         type: 'telegram',
-        value: './qwq/216.html',
+        value: 'telegram.js',
         style: ['large'],
         link: ['icon']
     },
     哔哩哔哩Bilibili: {
         type: 'bilibili',
-        value: 'pasta.html',
+        value: 'bilibili.js',
         style: ['large'],
         link: ['icon']
     },
-    Youtube: async () => {
-            console.log(111111);
-            const response = await fetch(`${action.value}`);
-            console.log(response, 'jhgf');
-            const template = document.createElement('template');
-            template.innerHTML = await response.text();
-            createWindow(name, template.content, config);
-        },
+    Youtube: {
+        type: 'youtube',
+        value: 'youtube.js',
+        style: ['large'],
+        link: ['icon']
+    },
     unya: {
         name: '混沌',
         type: 'js',
@@ -1107,44 +1105,39 @@ function execute(key, action) {
             newWindow.appendChild(script);
         },
         facebook: async () => {
-            console.log(111111);
-            const response = await fetch(`${action.value}`);
-            console.log(response, 'jhgf');
-            const template = document.createElement('template');
-            template.innerHTML = await response.text();
-            createWindow(name, template.content, config);
+            const script = document.createElement('script');
+            script.setAttribute('src', `../js/${action.value}`);
+            const newWindow = createWindow(name, null, config);
+            window.root = newWindow.children[1];
+            newWindow.appendChild(script);
         },
         instagram: async () => {
-            console.log(111111);
-            const response = await fetch(`${action.value}`);
-            console.log(response, 'jhgf');
-            const template = document.createElement('template');
-            template.innerHTML = await response.text();
-            createWindow(name, template.content, config);
+            const script = document.createElement('script');
+            script.setAttribute('src', `../js/${action.value}`);
+            const newWindow = createWindow(name, null, config);
+            window.root = newWindow.children[1];
+            newWindow.appendChild(script);
         },
         telegram: async () => {
-            console.log(111111);
-            const response = await fetch(`${action.value}`);
-            console.log(response, 'jhgf');
-            const template = document.createElement('template');
-            template.innerHTML = await response.text();
-            createWindow(name, template.content, config);
+            const script = document.createElement('script');
+            script.setAttribute('src', `../js/${action.value}`);
+            const newWindow = createWindow(name, null, config);
+            window.root = newWindow.children[1];
+            newWindow.appendChild(script);
         },
         bilibili: async () => {
-            console.log(111111);
-            const response = await fetch(`${action.value}`);
-            console.log(response, 'jhgf');
-            const template = document.createElement('template');
-            template.innerHTML = await response.text();
-            createWindow(name, template.content, config);
+            const script = document.createElement('script');
+            script.setAttribute('src', `../js/${action.value}`);
+            const newWindow = createWindow(name, null, config);
+            window.root = newWindow.children[1];
+            newWindow.appendChild(script);
         },
         youtube: async () => {
-            console.log(111111);
-            const response = await fetch(`${action.value}`);
-            console.log(response, 'jhgf');
-            const template = document.createElement('template');
-            template.innerHTML = await response.text();
-            createWindow(name, template.content, config);
+            const script = document.createElement('script');
+            script.setAttribute('src', `../js/${action.value}`);
+            const newWindow = createWindow(name, null, config);
+            window.root = newWindow.children[1];
+            newWindow.appendChild(script);
         },
         md: async () => {
             const response = htmlConfig[action.value];
