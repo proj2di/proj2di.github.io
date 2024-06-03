@@ -103,44 +103,44 @@ var config = {
         style: ['medium'],
         link: ['entry', 'icon']
     },
-    必应: {
-        type: 'url',
+    Twitter: {
+        type: 'twitter',
         value: './qwq/211.html',
         style: ['large'],
         link: ['icon']
     },
-    搜狗: {
-        type: 'url',
+    Facebook: {
+        type: 'facebook',
         value: './qwq/212.html',
         style: ['large'],
         link: ['icon']
     },
-    FOFA: {
-        type: 'url',
+    Instagram: {
+        type: 'instagram',
         value: './qwq/214.html',
         style: ['large'],
         link: ['icon']
     },
-    ZoomEye: {
-        type: 'url',
+    Telegram: {
+        type: 'telegram',
         value: './qwq/216.html',
         style: ['large'],
         link: ['icon']
     },
-    pasta: {
-        type: 'url',
+    哔哩哔哩Bilibili: {
+        type: 'bilibili',
         value: 'pasta.html',
         style: ['large'],
         link: ['icon']
     },
-    '3dtext': {
-        name: '3D测试',
-        type: 'iframe',
-        value: '3dtext.html',
-        style: ['medium', 'fixed'],
-        link: ['icon'],
-        icon: 'tree'
-    },
+    Youtube: async () => {
+            console.log(111111);
+            const response = await fetch(`${action.value}`);
+            console.log(response, 'jhgf');
+            const template = document.createElement('template');
+            template.innerHTML = await response.text();
+            createWindow(name, template.content, config);
+        },
     unya: {
         name: '混沌',
         type: 'js',
@@ -1099,6 +1099,54 @@ function execute(key, action) {
             template.innerHTML = await response.text();
             createWindow(name, template.content, config);
         },
+        twitter: async () => {
+            console.log(111111);
+            const response = await fetch(`${action.value}`);
+            console.log(response, 'jhgf');
+            const template = document.createElement('template');
+            template.innerHTML = await response.text();
+            createWindow(name, template.content, config);
+        },
+        facebook: async () => {
+            console.log(111111);
+            const response = await fetch(`${action.value}`);
+            console.log(response, 'jhgf');
+            const template = document.createElement('template');
+            template.innerHTML = await response.text();
+            createWindow(name, template.content, config);
+        },
+        instagram: async () => {
+            console.log(111111);
+            const response = await fetch(`${action.value}`);
+            console.log(response, 'jhgf');
+            const template = document.createElement('template');
+            template.innerHTML = await response.text();
+            createWindow(name, template.content, config);
+        },
+        telegram: async () => {
+            console.log(111111);
+            const response = await fetch(`${action.value}`);
+            console.log(response, 'jhgf');
+            const template = document.createElement('template');
+            template.innerHTML = await response.text();
+            createWindow(name, template.content, config);
+        },
+        bilibili: async () => {
+            console.log(111111);
+            const response = await fetch(`${action.value}`);
+            console.log(response, 'jhgf');
+            const template = document.createElement('template');
+            template.innerHTML = await response.text();
+            createWindow(name, template.content, config);
+        },
+        youtube: async () => {
+            console.log(111111);
+            const response = await fetch(`${action.value}`);
+            console.log(response, 'jhgf');
+            const template = document.createElement('template');
+            template.innerHTML = await response.text();
+            createWindow(name, template.content, config);
+        },
         md: async () => {
             const response = htmlConfig[action.value];
             const template = document.createElement('template');
@@ -1183,6 +1231,18 @@ function makeIcon(key, action) {
         icon = 'okusuri';
     } else if (action.type == 'url') {
         icon = 'url';
+    } else if (action.type == 'twitter') {
+        icon = 'twitter';
+    } else if (action.type == 'facebook') {
+        icon = 'facebook';
+    } else if (action.type == 'instagram') {
+        icon = 'instagram';
+    } else if (action.type == 'telegram') {
+        icon = 'telegram';
+    } else if (action.type == 'bilibili') {
+        icon = 'bilibili';
+    } else if (action.type == 'youtube') {
+        icon = 'youtube';
     } else if (action.type == 'game') {
         icon = 'game';
     } else if (action.type == 'js') {
