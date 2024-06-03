@@ -66,13 +66,13 @@ var config = {
         type: 'folder',
         value: {
             internet8: {
-                name: '关于魔法少女',
+                name: '联系 Contact',
                 type: 'url',
                 value: './contact.html',
                 style: ['large']
             },
         internet9: {
-                name: '关于魔法少女2',
+                name: 'PGP Public Key Block',
                 type: 'md',
                 value: 'internet8',
                 style: ['large']
@@ -87,13 +87,13 @@ var config = {
         type: 'folder',
         value: {
             internet8: {
-                name: '关于魔法少女',
+                name: '条款和隐私声明 Terms &amp; Privacy Notice',
                 type: 'md',
                 value: 'internet8',
                 style: ['large']
             },
             internet9: {
-                name: '关于魔法少女2',
+                name: '数据处理要求 Data Handling Requirement',
                 type: 'md',
                 value: 'internet8',
                 style: ['large']
