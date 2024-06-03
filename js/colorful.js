@@ -9,7 +9,7 @@ var config = {
         start: true
     },
     drug: {
-        name: '药物',
+        name: '药物 Medication',
         type: 'okusuri',
         value: {
             tail: {
@@ -42,7 +42,7 @@ var config = {
         link: ['entry', 'icon']
     },
     secret: {
-        name: '秘密',
+        name: '秘密 Secret',
         type: 'folder',
         value: {
             secret2: {
@@ -78,7 +78,7 @@ var config = {
                 style: ['large']
             }
         },
-        desc: 'いろいろなこと（不是涩涩）',
+        desc: 'All support in one place',
         style: ['medium'],
         link: ['entry', 'icon']
     },
@@ -99,7 +99,7 @@ var config = {
                 style: ['large']
             }
         },
-        desc: 'いろいろなこと（不是涩涩）',
+        desc: 'Legal stuffs',
         style: ['medium'],
         link: ['entry', 'icon']
     },
