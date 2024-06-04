@@ -151,17 +151,10 @@ const htmlConfig = {
     readme: `<h1>欢迎来到小冷官方网站</h1>
     <h2>Welcome to Xiaoleng Official Website</h2>
     <p><img src="./images/logo.png" alt="logo"></p>
-    <p>基于 <em>别上这破网了一起去看海吧</em> 的开发理念拼凑出来的玩具。</p>
-    <li>主播女孩重度依赖</li>
-    <li>紫咲诗音（<a href="https://www.youtube.com/watch?v=e4jfKyvO92s">新衣装</a>かわいい）</li>
-    <li>魔法少女小圆<del>脸</del></li>
-    <li>2000年的妄想与2025年的回忆</li>
-    </ul>
-    <p>关于本站：</p>
-    <ol>
-    <li>这里没有后端。一切运行在浏览器上，或运行在梦里，或运行在梦里的浏览器上。</li>
-    <li>前端程序由原生 JS 开发。若发现了其他语言或框架，立刻停止一切工作。</li>
-    </ol>`,
+    <p>这里是你们最可爱的每天都在追逐着星光的梦想的小冷<br>
+    I am ur cutest Xiaoleng, chasing the dreams of starlight every day.</p>
+    <p>欢迎来到小冷的世界<br>
+    Welcome to the world of Xiaoleng.</p>`,
     internet1: `<h2>金刚烷胺</h2>
   
       极为危险的畜生药物。在决定服用之前，你需要知晓其杀伤性，且绝对不能高剂量使用</p>
