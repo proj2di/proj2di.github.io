@@ -1,1 +1,0 @@
-const tempPage=window.open('https://space.bilibili.com/8975591');

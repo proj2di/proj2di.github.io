@@ -1,1 +1,0 @@
-window.open("https://t.me/xlnww");

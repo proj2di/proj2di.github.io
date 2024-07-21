@@ -1,1 +1,0 @@
-window.open("https://instagram.com/xia0leng");
