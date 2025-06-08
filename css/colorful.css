@@ -1,0 +1,476 @@
+:root {
+  --red: hsl(330, 100%, 80%);
+  --orange: hsl(15, 100%, 80%);
+  --yellow: hsl(60, 100%, 80%);
+  --green: hsl(105, 100%, 80%);
+  --cyan: hsl(150, 100%, 80%);
+  --blue: hsl(195, 100%, 80%);
+  --purple: hsl(240, 100%, 80%);
+  --pink: hsl(285, 100%, 80%);
+  --darkred: hsl(330, 100%, 65%);
+  --darkorange: hsl(15, 100%, 65%);
+  --darkyellow: hsl(60, 100%, 65%);
+  --darkgreen: hsl(105, 100%, 65%);
+  --darkcyan: hsl(150, 100%, 65%);
+  --darkblue: hsl(195, 100%, 65%);
+  --darkpurple: hsl(240, 100%, 65%);
+  --darkpink: hsl(285, 100%, 65%);
+  --lightred: hsl(330, 100%, 90%);
+  --lightorange: hsl(15, 100%, 90%);
+  --lightyellow: hsl(60, 100%, 90%);
+  --lightgreen: hsl(105, 100%, 90%);
+  --lightcyan: hsl(150, 100%, 90%);
+  --lightblue: hsl(195, 100%, 90%);
+  --lightpurple: hsl(240, 100%, 90%);
+  --lightpink: hsl(285, 100%, 90%);
+}
+
+@font-face {
+  font-family: unifont;
+  src: url(asset/unifont-15.1.04.otf);
+  font-display: block;
+}
+
+@font-face {
+  font-family: unifont-upper;
+  src: url(asset/unifont_upper-15.1.04.otf);
+  unicode-range: U+10000-10FFFF;
+  font-display: swap;
+}
+
+html, body, pre, code {
+  font-family: unifont, unifont-upper;
+  font-size: 16px;
+  line-height: 120%;
+}
+
+em, strong {
+  color: var(--darkpurple);
+}
+
+a {
+  color: var(--darkorange);
+}
+
+a:hover {
+  color: var(--darkpink);
+}
+
+h1, h2, h3 {
+  color: var(--darkred);
+}
+
+body {
+  margin: 0;
+  height: 100dvh;
+  overflow: hidden;
+  background-color: #000;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  overflow: hidden;
+}
+
+.arena {
+  display: grid;
+  height: 100%;
+  grid-template-rows: calc(100% - 1.75em) 1.75em;
+  background-image: url(images/0.png);
+  background-position: center;
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.desktop {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: flex-start;
+  padding: 8px;
+}
+
+.iconwrap {
+  width: 96px;
+  height: 88px;
+  margin: 4px;
+  text-align: center;
+  overflow: hidden;
+  user-select: none;
+}
+
+.iconwrap > .icon:hover {
+  background-color: rgba(255, 255, 255, .2);
+}
+
+.iconwrap > .icon > img {
+  width: 48px;
+  height: 48px;
+  image-rendering: pixelated;
+}
+
+.iconwrap > .icon > div > img:not(.shortcut-arrow) {
+  width: 48px;
+  height: 48px;
+  image-rendering: pixelated;
+}
+
+.shortcut-arrow {
+  position: absolute;
+  left: 0px;
+  bottom: 5px;
+  width: 14px;
+  height: 14px;
+  image-rendering: pixelated;
+  pointer-events: none;
+}
+
+
+.iconwrap > .icon > .tag {
+  font-size: 16px;
+  line-height: 115%;
+  overflow-wrap: anywhere;
+  text-shadow: 0 0 2px #ccc;
+}
+
+.bar {
+  z-index: 1000;
+  background-color: var(--lightpurple);
+  user-select: none;
+  display: grid;
+  grid-template-columns: 6em auto 5em;
+  border-style: outset;
+  border-width: 2px;
+}
+
+.bar > div {
+  margin: 1px 2px;
+}
+
+.bar > .start {
+  border-style: outset;
+  border-width: 2px;
+  text-align: center;
+  background: url(./images/start.png);
+  background-position: center;
+  background-size: contain;
+}
+
+.bar > .start > span:nth-child(1) {
+  padding-left: 30px;
+}
+
+.bar > .start.active {
+  border-style: inset;
+}
+
+.bar > .taskbar {
+  display: flex;
+  flex-flow: row nowrap;
+  overflow: hidden;
+  font-size: 16px;
+  border-left: 3px double #999;
+  border-right: 3px double #999;
+  padding-left: 2px;
+}
+
+.bar > .taskbar > .task {
+  flex-basis: 9em;
+  overflow: hidden;
+  margin-left: 2px;
+  padding-left: 2px;
+  border-style: outset;
+  border-width: 2px;
+}
+
+.bar > .taskbar > .task.active {
+  border-style: inset;
+}
+
+.bar > .status {
+  border-style: inset;
+  border-width: 2px;
+}
+
+.bar > .status > .counter {
+  text-align: center;
+}
+
+.bar > .menu {
+  display: grid;
+  grid-template-columns: .5em 10em;
+  position: absolute;
+  left: 0;
+  bottom: 1.75em;
+  z-index: 990;
+  display: none;
+  margin: 0;
+  background-image: linear-gradient(180deg, var(--lightblue), var(--lightpurple));
+  border-style: outset;
+  border-width: 2px;
+}
+
+.bar > .menu > .ribbon {
+  background-image: linear-gradient(180deg, var(--blue), var(--darkpurple));
+}
+
+.bar > .menu > .list > .entry {
+  border: 2px solid transparent;
+  border-top: 2px solid #ccc;
+  padding: 4px;
+}
+
+.bar > .menu > .list > .entry:active {
+  border-style: inset;
+  border-color: initial;
+}
+
+.window {
+  position: absolute;
+  resize: both;
+  overflow: hidden;
+  min-width: min(20vw, 30vh);
+  min-height: 20vh;
+  display: grid;
+  grid-template-rows: 1.5em auto;
+  background-color: var(--lightpink);
+  border-style: outset;
+  border-width: 2px;
+  box-sizing: border-box;
+}
+
+.window.dragging {
+  opacity: .8;
+}
+
+.window.ultrasmall {
+  width: min(32vw, 48vh);
+  height: 32vh;
+}
+
+.window.install {
+  width: min(36vw, 54vh);
+  height: 36vh;
+}
+
+.window.small {
+  width: min(40vw, 60vh);
+  height: 40vh;
+}
+
+.window.medium {
+  width: min(60vw, 90vh);
+  height: 60vh;
+}
+
+.window.large {
+  width: min(90vw, 120vh);
+  height: 80vh;
+}
+
+.window.fixed {
+  resize: none;
+}
+
+@media (max-width: 600px) {
+  .window.ultrasmall {
+    width: 68vw;
+    height: 24vh;
+  }
+  .window.install {
+    width: 76.5vw;
+    height: 27vh;
+  }
+  .window.small {
+    width: 85vw;
+    height: 30vh;
+  }
+  .window.medium, .window.large {
+    width: 95vw;
+    height: 80vh;
+  }
+}
+
+.window.maximized {
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: calc(100% - 1.75em) !important;
+  resize: none;
+}
+
+.window > .header {
+  user-select: none;
+  display: grid;
+  grid-template-columns: auto 1.5em 1.5em 1.5em;
+  background-image: linear-gradient(90deg, var(--darkblue), var(--red));
+}
+
+.window > .content {
+  overflow: auto;
+  padding: 8px;
+}
+
+.window.fixed > .content {
+  overflow: hidden;
+  padding: 0;
+}
+
+.window > .content > .folder-meta {
+  margin: 12px;
+}
+
+.window > .content > .folder-meta > span:nth-child(1) {
+  color: var(--darkred);
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.window > .content > .folder-meta > span:nth-child(2) {
+  color: var(--red);
+  margin: 16px;
+}
+
+.window > .content > .folder-desc {
+  margin: 12px;
+  border-bottom: 2px solid var(--purple);
+}
+
+.window > .content > .folder {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 16px;
+}
+
+.window > .header > .title {
+  cursor: move;
+  padding-left: 4px;
+  line-height: 150%;
+  overflow: hidden;
+  touch-action: none;
+}
+
+.window.maximized > .header > .title {
+  cursor: default;
+}
+
+.window > .header > .button {
+  margin: 4px;
+  border-style: outset;
+  border-width: 2px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.window > .header > .button.minimize {
+  background-color: var(--darkyellow);
+  background-image: url(data:image/svg+xml;charset=utf-8;base64,PHN2ZyB3aWR0aD0nNicgaGVpZ2h0PScyJyBmaWxsPSdub25lJyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnPjxwYXRoIGZpbGw9JyMwMDAnIGQ9J00wIDBoNnYySDB6Jy8+PC9zdmc+);
+}
+
+.window > .header > .button.maximize {
+  background-color: var(--darkgreen);
+  background-image: url(data:image/svg+xml;charset=utf-8;base64,PHN2ZyB3aWR0aD0nOScgaGVpZ2h0PSc5JyBmaWxsPSdub25lJyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnPjxwYXRoIGZpbGwtcnVsZT0nZXZlbm9kZCcgY2xpcC1ydWxlPSdldmVub2RkJyBkPSdNOSAwSDB2OWg5VjB6TTggMkgxdjZoN1YyeicgZmlsbD0nIzAwMCcvPjwvc3ZnPg==);
+}
+
+.window > .header > .button.close {
+  background-color: var(--orange);
+  background-image: url(data:image/svg+xml;charset=utf-8;base64,PHN2ZyB3aWR0aD0nOCcgaGVpZ2h0PSc3JyBmaWxsPSdub25lJyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnPjxwYXRoIGZpbGwtcnVsZT0nZXZlbm9kZCcgY2xpcC1ydWxlPSdldmVub2RkJyBkPSdNMCAwaDJ2MWgxdjFoMlYxaDFWMGgydjFIN3YxSDZ2MUg1djFoMXYxaDF2MWgxdjFINlY2SDVWNUgzdjFIMnYxSDBWNmgxVjVoMVY0aDFWM0gyVjJIMVYxSDBWMHonIGZpbGw9JyMwMDAnLz48L3N2Zz4=);
+}
+
+.window > .header > .button:active {
+  border-style: inset;
+}
+
+@media print {
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* 让body与主背景图保留 */
+  body {
+    background-color: #000 !important;
+  }
+
+  .arena {
+    background-image: url(images/0.png) !important;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+  }
+
+  /* 修复 .window 窗口背景和边框 */
+  .window {
+    background-color: var(--lightpink) !important;
+    border-style: outset !important;
+    border-width: 2px !important;
+    border-color: #fff !important; /* ← 白色边框 */
+    page-break-inside: avoid !important;
+  }
+
+  .window > .header {
+    background-image: linear-gradient(90deg, var(--darkblue), var(--red)) !important;
+  }
+
+  .window > .content {
+    background-color: var(--lightpink) !important;
+  }
+
+  /* iframe 壳子模拟样式 */
+  iframe {
+    background-color: var(--lightpink) !important;
+    border: 4px solid #000 !important;
+    box-sizing: border-box !important;
+  }
+
+  /* 开始菜单显示 */
+  .bar > .menu {
+    background-image: linear-gradient(180deg, var(--lightblue), var(--lightpurple)) !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .bar > .menu > .ribbon {
+    background-image: linear-gradient(180deg, var(--blue), var(--darkpurple)) !important;
+  }
+
+  /* 强制固定开始栏在打印首页底部 */
+    .bar {
+    position: fixed !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 1.75em !important;
+    display: grid !important;
+    grid-template-columns: 6em auto 5em !important;
+
+    /* 💥关键补丁：强制渲染背景 */
+    background: var(--lightpurple) !important;
+    box-shadow: inset 0 0 0 9999px var(--lightpurple) !important;
+
+    z-index: 9999 !important;
+    page-break-inside: avoid !important;
+  }
+
+  /* Facebook插件的“赞评论分享”图标占位 */
+  .fb-plugin-placeholder::after {
+    content: "👍 2  💬  Comment   ↗ Share";
+    display: block;
+    color: #333;
+    font-size: 14px;
+    padding: 6px;
+    background-color: #eee;
+  }
+
+  /* 避免 bar, iconwrap 这些 UI 元素被分页拆开 */
+  .iconwrap, .bar, .tag {
+    page-break-inside: avoid !important;
+    background: inherit !important;
+    color: inherit !important;
+  }
+}
